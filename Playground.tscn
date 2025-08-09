@@ -1,0 +1,276 @@
+[gd_scene load_steps=16 format=3 uid="uid://b41q57yjjjsok"]
+
+[ext_resource type="PackedScene" uid="uid://c75s2m6eic1vo" path="res://Player/Character/Player.tscn" id="8_fimwp"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_80c3a"]
+load_path = "res://.godot/imported/daytime.png-d29902e6712cb80288c108c16e5c6627.s3tc.ctex"
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_sf4hg"]
+panorama = SubResource("CompressedTexture2D_80c3a")
+
+[sub_resource type="Sky" id="Sky_d17em"]
+sky_material = SubResource("PanoramaSkyMaterial_sf4hg")
+
+[sub_resource type="Environment" id="Environment_qyvd4"]
+background_mode = 2
+background_color = Color(0.647059, 0.909804, 0.917647, 1)
+sky = SubResource("Sky_d17em")
+ssao_enabled = true
+sdfgi_enabled = true
+adjustment_enabled = true
+adjustment_saturation = 1.15
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1cwr0"]
+resource_local_to_scene = true
+albedo_color = Color(0.631373, 0.756863, 0.803922, 1)
+metallic_specular = 0.52
+roughness = 0.57
+rim = 0.3
+clearcoat_enabled = true
+clearcoat = 0.44
+anisotropy = -1.0
+backlight = Color(0.223529, 0.894118, 0.435294, 1)
+detail_blend_mode = 1
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 5
+grow_amount = 1.054
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_46faf"]
+load_path = "res://.godot/imported/Grid_02_BaseMap.png-cb72c95548ec176159c5e19b1975ac3d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_threo"]
+load_path = "res://.godot/imported/Grid_01_Emissive.png-66d0dd14116031ca47448fa008c4a320.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s2wwn"]
+load_path = "res://.godot/imported/Grid_01_Normal.png-f023fcd12b1c4ad632ffb35953de30a4.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bia53"]
+resource_local_to_scene = true
+albedo_color = Color(0.113725, 0.6, 0.843137, 1)
+albedo_texture = SubResource("CompressedTexture2D_46faf")
+metallic_specular = 0.52
+roughness = 0.57
+emission_enabled = true
+emission = Color(0.678431, 0.866667, 0.835294, 1)
+emission_energy_multiplier = 12.0
+emission_operator = 1
+emission_texture = SubResource("CompressedTexture2D_threo")
+normal_enabled = true
+normal_scale = 1.13
+normal_texture = SubResource("CompressedTexture2D_s2wwn")
+rim = 0.3
+clearcoat_enabled = true
+clearcoat = 0.44
+anisotropy = -1.0
+backlight_enabled = true
+backlight = Color(0.207843, 0.827451, 0.403922, 1)
+detail_blend_mode = 1
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 5
+grow_amount = 1.054
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ta15a"]
+load_path = "res://.godot/imported/Grid_01_BaseMap.png-9acca82affa94f0e0606337eae6016c0.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3px5j"]
+resource_local_to_scene = true
+albedo_color = Color(1, 0.729412, 0.266667, 1)
+albedo_texture = SubResource("CompressedTexture2D_ta15a")
+metallic_specular = 0.52
+roughness = 0.57
+emission_enabled = true
+emission = Color(0.866667, 0.803922, 0.643137, 1)
+emission_energy_multiplier = 12.0
+emission_operator = 1
+emission_texture = SubResource("CompressedTexture2D_threo")
+normal_enabled = true
+normal_scale = 1.13
+normal_texture = SubResource("CompressedTexture2D_s2wwn")
+rim = 0.3
+clearcoat_enabled = true
+clearcoat = 0.44
+anisotropy = -1.0
+backlight_enabled = true
+backlight = Color(0.894118, 0.870588, 0.72549, 1)
+detail_blend_mode = 1
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 5
+grow_amount = 1.054
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3321n"]
+resource_local_to_scene = true
+albedo_color = Color(0.396078, 0.933333, 0.705882, 1)
+albedo_texture = SubResource("CompressedTexture2D_ta15a")
+metallic_specular = 0.52
+roughness = 0.57
+emission_enabled = true
+emission = Color(0.72549, 0.866667, 0.823529, 1)
+emission_energy_multiplier = 12.0
+emission_operator = 1
+emission_texture = SubResource("CompressedTexture2D_threo")
+normal_enabled = true
+normal_scale = 1.13
+normal_texture = SubResource("CompressedTexture2D_s2wwn")
+rim = 0.3
+clearcoat_enabled = true
+clearcoat = 0.44
+anisotropy = -1.0
+backlight_enabled = true
+backlight = Color(0.509804, 0.811765, 0.878431, 1)
+detail_blend_mode = 1
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 5
+grow_amount = 1.054
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ejyp"]
+resource_local_to_scene = true
+albedo_color = Color(0.960784, 0.482353, 0.945098, 1)
+albedo_texture = SubResource("CompressedTexture2D_ta15a")
+metallic_specular = 0.52
+roughness = 0.57
+emission_enabled = true
+emission = Color(0.847059, 0.678431, 0.866667, 1)
+emission_energy_multiplier = 12.0
+emission_operator = 1
+emission_texture = SubResource("CompressedTexture2D_threo")
+normal_enabled = true
+normal_scale = 1.13
+normal_texture = SubResource("CompressedTexture2D_s2wwn")
+rim = 0.3
+clearcoat_enabled = true
+clearcoat = 0.44
+anisotropy = -1.0
+backlight_enabled = true
+backlight = Color(0.741176, 0.360784, 0.603922, 1)
+detail_blend_mode = 1
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 5
+grow_amount = 1.054
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q63b2"]
+resource_local_to_scene = true
+albedo_color = Color(0.862745, 0.87451, 0.882353, 1)
+albedo_texture = SubResource("CompressedTexture2D_ta15a")
+metallic_specular = 0.52
+roughness = 0.57
+emission_enabled = true
+emission = Color(0.670588, 0.752941, 0.866667, 1)
+emission_energy_multiplier = 12.0
+emission_operator = 1
+emission_texture = SubResource("CompressedTexture2D_threo")
+normal_enabled = true
+normal_scale = 1.13
+normal_texture = SubResource("CompressedTexture2D_s2wwn")
+rim = 0.3
+clearcoat_enabled = true
+clearcoat = 0.44
+anisotropy = -1.0
+detail_blend_mode = 1
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 5
+grow_amount = 1.054
+
+[node name="Scene" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("8_fimwp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -19.6221)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.892271, -0.274443, 0.358516, 2.02684e-08, 0.794054, 0.607847, -0.451501, 0.542364, -0.708511, 0, 2.76815, 9.26053)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_qyvd4")
+
+[node name="Level" type="Node3D" parent="."]
+
+[node name="FloorAlt" type="CSGBox3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14287, 0)
+size = Vector3(48.5, 0.1, 48.5)
+material = SubResource("StandardMaterial3D_1cwr0")
+
+[node name="Floor" type="CSGBox3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14482, 0)
+use_collision = true
+size = Vector3(47.5872, 0.1, 47.791)
+material = SubResource("StandardMaterial3D_bia53")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level"]
+transform = Transform3D(0.833182, 0, 0.552999, 0, 1, 0, -0.552999, 0, 0.833182, 16.5416, 3.19482, -15.014)
+use_collision = true
+size = Vector3(4, 6, 8)
+material = SubResource("StandardMaterial3D_3px5j")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Level"]
+transform = Transform3D(-0.318513, 0, 0.947919, 0, 1, 0, -0.947919, 0, -0.318513, 0.541599, 13.1948, 3.986)
+use_collision = true
+size = Vector3(4, 6, 8)
+material = SubResource("StandardMaterial3D_3px5j")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 2.19482, -6.9983)
+use_collision = true
+size = Vector3(6, 8, 6)
+material = SubResource("StandardMaterial3D_3321n")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.19482, -6.9983)
+use_collision = true
+size = Vector3(4, 4, 6)
+material = SubResource("StandardMaterial3D_3321n")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1.19482, -10.9983)
+use_collision = true
+size = Vector3(4, 2, 2)
+material = SubResource("StandardMaterial3D_3321n")
+
+[node name="Node3D" type="Node3D" parent="Level"]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -17.521, 4.76836e-07, -18.7606)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Level/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.233154, 0.69482, -0.0343475)
+use_collision = true
+size = Vector3(8, 1, 1)
+material = SubResource("StandardMaterial3D_5ejyp")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Level/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.76685, 1.69482, -0.0343475)
+use_collision = true
+size = Vector3(4, 1, 1)
+material = SubResource("StandardMaterial3D_5ejyp")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Level/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.76685, 2.69482, -0.0343475)
+use_collision = true
+material = SubResource("StandardMaterial3D_5ejyp")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.19482, 4)
+use_collision = true
+size = Vector3(24, 10, 16)
+material = SubResource("StandardMaterial3D_q63b2")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Level/CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -3, -7)
+operation = 2
+size = Vector3(4, 6, 2)
+material = SubResource("StandardMaterial3D_q63b2")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Level/CSGBox3D"]
+transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, 11, -3, 0)
+operation = 2
+size = Vector3(12, 6, 2)
+material = SubResource("StandardMaterial3D_q63b2")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Level/CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+operation = 2
+size = Vector3(22, 10, 14)
+material = SubResource("StandardMaterial3D_q63b2")
